@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0d0d0d; /* Fundo escuro quase preto */
+    color: #fff; /* Cor do texto */
+    position: relative;
+  }
+
+  header {
+    background-color: #050505; /* Cor de fundo mais escura */
+    padding: 20px;
+    text-align: center;
+    width: 100vw;
+    position: fixed;
+  }
+
+  header h1 {
+    margin: 0;
+  }
+
+  main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+
+  section {
+    margin: 20px;
+    display: flex;
+    visibility:hidden;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+  }
+
+  .pink{
+    text-shadow:  
+    /* deslocamento-x | deslocamento-y | raio-de-desfoque | cor */
+    1px -1px 0 #f100dd,
+    2px -2px 0 #f100dd,
+    3px -3px 0 #f100dd,
+    4px -4px 0 #f100dd,
+    5px -5px 0 #f100dd,
+    6px -6px 0 #f100dd,
+    7px -7px 0 #f100dd,
+    8px -8px 0 #f100dd,
+    9px -9px 0 #f100dd,
+    10px -10px 0 #f100dd,
+    11px -11px 0 #f100dd,
+    12px -12px 0 #f100dd,
+    13px -13px 12px rgba(0, 0, 0, 0.55),
+    13px -13px 1px rgba(0, 0, 0, 0.5);
+  }
+
+  .blue{
+    text-shadow:  
+    /* deslocamento-x | deslocamento-y | raio-de-desfoque | cor */
+    1px -1px 0 #3b76ad,
+    2px -2px 0 #3b76ad,
+    3px -3px 0 #3b76ad,
+    4px -4px 0 #3b76ad,
+    5px -5px 0 #3b76ad,
+    6px -6px 0 #3b76ad,
+    7px -7px 0 #3b76ad,
+    8px -8px 0 #3b76ad,
+    9px -9px 0 #3b76ad,
+    10px -10px 0 #3b76ad,
+    11px -11px 0 #3b76ad,
+    12px -12px 0 #3b76ad,
+    13px -13px 12px rgba(0, 0, 0, 0.55),
+    13px -13px 1px rgba(0, 0, 0, 0.5);
+  }
+
+  section p{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 7em;
+  }
+
+  .blog-section {
+    width: 200px;
+    height: 200px;
+    background-color: #313131; /* Cor de fundo mais clara */
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra de fundo */
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .blog-section:hover {
+    transform: scale(1.1);
+  }
+
+  footer {
+    background-color: #050505; /* Cor de fundo mais escura */
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  footer p {
+    margin: 0;
+  }

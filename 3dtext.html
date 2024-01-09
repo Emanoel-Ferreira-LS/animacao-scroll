@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texto em 3d</title>
+    <style>
+        body {
+            background-color: #880000;
+            
+        }
+
+        
+
+        h1 {
+            color: #fff;
+            font-size: 150px;
+            font-family: monospace;
+            font-weight: bold;
+            text-align: center;
+            text-shadow:  
+            /* deslocamento-x | deslocamento-y | raio-de-desfoque | cor */
+            1px -1px 0 #2f5d87, 
+            2px -2px 0 #2b5379, 
+            3px -3px 0 #254869, 
+            4px -4px 0 #254869, 
+            5px -5px 0 #2b5379, 
+            6px -6px 0 #2f5d87, 
+            7px -7px 0 #2e5b85, 
+            8px -8px 0 #346899, 
+            9px -9px 0 #3b76ad, 
+            10px -10px 0 #3b76aa, 
+            11px -11px 0 #4386c5, 
+            12px -12px 0 #2e5780, 
+            13px -13px 12px rgba(0, 0, 0, 0.55), 
+            13px -13px 1px rgba(0, 0, 0, 0.5);
+        }
+
+        div:hover{
+            /*rotate3d(x, y, z, a);
+                \ | /
+                 \|/
+                x,y,z 
+                a: grau de rotação(se for positivo, é na posição horária, se negativo: anti-horária)
+            */
+            /*transform: rotate3d(0, 1, 0, 60deg);*/
+            transform: rotate3d(2, 5, 0, 60deg);
+            transition: margin-left 4s 4s;
+        }
+        /*
+        TRANSFORM:
+            // Keyword values 
+                transform: none;
+
+            // Function values 
+                transform: matrix(1, 2, 3, 4, 5, 6);
+                transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+                transform: perspective(17px);
+                transform: rotate(0.5turn);
+                transform: rotate3d(1, 2, 3, 10deg);
+                transform: rotateX(10deg);
+                transform: rotateY(10deg);
+                transform: rotateZ(10deg);
+                transform: translate(12px, 50%);
+                transform: translate3d(12px, 50%, 3em);
+                transform: translateX(2em);
+                transform: translateY(3in);
+                transform: translateZ(2px);
+                transform: scale(2, 0.5);
+                transform: scale3d(2.5, 1.2, 0.3);
+                transform: scaleX(2);
+                transform: scaleY(0.5);
+                transform: scaleZ(0.3);
+                transform: skew(30deg, 20deg);
+                transform: skewX(30deg);
+                transform: skewY(1.07rad);
+
+            // Multiple function values 
+                transform: translateX(10px) rotate(10deg) translateY(5px);
+                transform: perspective(500px) translate(10px, 0, 20px) rotateY(3deg);
+
+            // Global values 
+                transform: inherit;
+                transform: initial;
+                transform: revert;
+                transform: revert-layer;
+                transform: unset;
+        */
+    </style>
+</head>
+<body>
+    <div>
+        <h1>3D Text</h1>
+    </div>
+</body>
+</html>
